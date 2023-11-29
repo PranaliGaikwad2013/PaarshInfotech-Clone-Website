@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,700&display=swap');
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 'Poppins', sans-serif;
+}
+body
+{
+background: url(img/bg.jpg);
+}
+.contactUs
+{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactUs .title h2{
+    font-weight: 500;
+}
+.contact{
+    padding: 40px;
+    
+    box-shadow: 0 7px 35px rgba(218, 213, 213, 0.15);
+    background-image: url(https://www.pinterest.com/pin/843510205197104944/);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+.box h3{
+    font-size: 30px;
+    color: rgb(95, 191, 230);
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+    
+}
+.info h3{
+    font-size: 20px;
+    color: rgb(95, 191, 230);
+}
+.map{
+    grid-area: map;
+}
+/*form*/
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(95, 191, 230);
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: rgb(32, 32, 100);
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+/*---15.46 icons--*/
+/* info */
+.info{
+    
+    box-shadow: 0 7px 35px rgba(218, 213, 213, 0.15);
+}
+.info h3{
+    color: #111616;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: #111616;
+    font-size: 1.1em;
+}
+.info .infoBox div a{
+    color: #111616;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: #fff;
+    font-size: 2em;
+    color: #111616;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+   width: 100%;
+   height: 100%; 
+}
+@media(max-width: 991px)
+{
+    body{
+        background: #18b7ff;
+    }
+    .contactUs{
+        padding: 20px;
+    }
+    .box{
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "info"
+        "map";
+    }
+    .map{
+        padding: 0;
+        min-height: 300px;
+    }
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .infoBox{
+        
+        width: 100%;
+    }
+    .contact{
+        padding: 0;
+    }
+}
